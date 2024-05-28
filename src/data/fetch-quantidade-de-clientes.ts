@@ -1,10 +1,9 @@
-export default async function fetchChavesPix() {
+export default async function fetchQuantidadeDeClientes() {
   return fetch(
-    `${process.env.URL}/Pix_DadosAbertos/versao/v1/odata/ChavesPix(Data='2023-08-01')?$format=json&$top=10`,
+    `${process.env.URL}/selic_clientes/versao/v1/odata/QuantidadePorTipoCliente(Data='2023-08-01')?$format=json&$top=10`,
     {
       method: 'GET',
       headers: {
-        accept: 'application/json;odata.metadata=minimal',
         'Content-type': 'application/json',
       },
     }

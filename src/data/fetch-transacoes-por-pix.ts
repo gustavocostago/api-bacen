@@ -1,6 +1,6 @@
 export default async function fetchTransacoesPorPix() {
   return fetch(
-    `${process.env.URL_ESTATISTICA_PIX}/TransacoesPixPorMunicipio(DataBase='202405')?$format=json&$top=10`,
+    `${process.env.URL_ESTATISTICA_PIX}/mecir_dinheiro_em_circulacao/versao/v1/odata/TransacoesPixPorMunicipio(DataBase='202405')?$format=json&$top=10`,
     {
       method: 'GET',
       headers: {

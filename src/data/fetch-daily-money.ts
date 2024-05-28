@@ -1,6 +1,6 @@
 export default async function fetchDailyMoney() {
   return fetch(
-    `${process.env.URL}/informacoes_diarias_com_categoria?$format=json&$top=10`,
+    `${process.env.URL}/mecir_dinheiro_em_circulacao/versao/v1/odata/informacoes_diarias_com_categoria?$format=json&$top=10`,
     {
       method: 'GET',
       headers: {
