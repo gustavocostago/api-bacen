@@ -1,9 +1,10 @@
-export default async function getMoney() {
+export default async function fetchTransacoesPorPix() {
   return fetch(
-    `${process.env.URL}/informacoes_diarias?%24format=json&%24top=10`,
+    `${process.env.URL_ESTATISTICA_PIX}/TransacoesPixPorMunicipio(DataBase='202405')?$format=json&$top=10`,
     {
       method: 'GET',
       headers: {
+        accept: 'application/json;odata.metadata=minimal',
         'Content-type': 'application/json',
       },
     }
